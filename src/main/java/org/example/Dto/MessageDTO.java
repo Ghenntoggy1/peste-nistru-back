@@ -27,7 +27,7 @@ public class MessageDTO {
 
     public static MessageDTO mapFromMessage(Message message){
         return new MessageDTO(
-                message.getSender().getUsername(),
+                message.getSender().getRealName(),
                 message.getMessageText(),
                 message.getTimestamp()
                 );

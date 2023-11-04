@@ -28,7 +28,6 @@ public class MessageController {
     @MessageMapping("/sendMessage/{roomName}")
     @SendTo("/topic/{roomName}")
     public Message sendMessage(@Payload Message message, @DestinationVariable String roomName) {
-
         messageService.saveMessage(message, roomName);
         return message;
     }
