@@ -61,5 +61,10 @@
             <artifactId>spring-boot-starter-websocket</artifactId>
             <version>3.1.4</version>
         </dependency>
+        <dependency>
+            <groupId>com.deepl.api</groupId>
+            <artifactId>deepl-java</artifactId>
+            <version>1.4.0</version>
+        </dependency>
     </dependencies>
 </project>
