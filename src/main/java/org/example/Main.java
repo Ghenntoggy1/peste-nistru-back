@@ -10,7 +10,9 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) throws Exception {
 //        SpringApplication.run(Main.class, args);
+        String lang = "ro";
         TranslatorClass translatorClass = new TranslatorClass();
-        System.out.println(translatorClass.translateText("Привет!"));
+        System.out.println(translatorClass.translateText("plb it seems like ours xd\n" +
+                "moor!", lang));
     }
 }

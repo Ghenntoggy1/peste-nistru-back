@@ -12,8 +12,8 @@ public class TranslatorClass {
         this.translator = new Translator(authKey);
     }
 
-    public TextResult translateText(String input) throws DeepLException, InterruptedException {
-        TextResult result = this.translator.translateText(input, null, "ro");
+    public TextResult translateText(String input, String lang) throws DeepLException, InterruptedException {
+        TextResult result = this.translator.translateText(input, null, lang);
         System.out.println(result.getText());
         return result;
     }
