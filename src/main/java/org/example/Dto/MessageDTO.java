@@ -19,6 +19,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 public class MessageDTO {
 
+    private Integer senderId;
+
     private String sender;
 
     private String messageText;
@@ -27,6 +29,7 @@ public class MessageDTO {
 
     public static MessageDTO mapFromMessage(Message message){
         return new MessageDTO(
+                message.getSender().getId(),
                 message.getSender().getRealName(),
                 message.getMessageText(),
                 message.getTimestamp()
